@@ -1,0 +1,158 @@
+body {
+    background-color: rgb(50, 106, 108);
+    width: 100%;
+    
+}
+h1 {
+    font-size: 50px;
+    font-family: 'Gruppo', cursive;
+    color: rgb(239, 238, 238);
+    text-align: center;
+    
+    
+
+}
+
+ ul {
+    color: rgb(245, 244, 244);
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    border: 5px;
+    align-content: flex-start;
+    list-style: none;
+    
+}
+ 
+.mifoto {
+    width: 500px;
+    border-radius: 50%;
+    margin: 20px;
+    
+    
+    
+}
+
+
+.listauno {
+    color: rgb(247, 246, 246);
+    text-decoration: none;
+    margin: 10px;
+    
+}
+footer {
+    text-decoration: none;
+} 
+.contenedor-imagen {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color: yellow;
+}
+
+
+.principal {
+    background: none;
+}
+.principal {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/fondo.jpg.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+
+}
+#carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+}
+#imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.img {
+    box-shadow: 2px rgba(0, 0, 0, 0.85);
+    height: 500px;
+    width: 1100px;
+    border-radius: 15px;
+    margin: 5px;
+
+}
+.texto {
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    margin-bottom: 9px;
+    background-color: rgba(136, 136, 129, 0.835);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+}
+.texto h3 {
+    text-shadow: 0px 0px 15px black;
+    padding-top: 40px;
+    color: beige;
+    font-size: 27px;
+    font-weight: 300;
+    align-items: center;
+    overflow: hidden;
+}
+.texto p {
+    color: beige;
+    align-items: center;
+    text-shadow: 0px 0px 10px black;
+}
+#imagenes:hover .texto{
+    transition: height 1s;
+    transform: translateY(-150px);
+    height: 300px;
+    background-color: rgba(116, 117, 119, 0.759);
+}
+#imagenes .texto {
+    width: 500px;
+    height: 100px;
+    transition: 1s;
+}
+.chevro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#puntos .bold {
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: cyan;
+}
+.ur {
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+}
+.principal-dos {
+    color: yellow;
+    
+}
+
+
+
+    
+
