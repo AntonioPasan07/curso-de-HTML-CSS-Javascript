@@ -92,6 +92,7 @@ a {
     width: 1100px;
     border-radius: 15px;
     margin: 5px;
+    cursor: pointer;
 
 }
 .texto {
@@ -110,7 +111,7 @@ a {
     text-shadow: 0px 0px 15px black;
     padding-top: 40px;
     color: beige;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 300;
     align-items: center;
     overflow: hidden;
@@ -151,6 +152,13 @@ a {
     color: yellow;
     
 }
+#atras {
+    cursor: pointer;
+}
+#adelante {
+    cursor: pointer;
+}
+
 
 
 

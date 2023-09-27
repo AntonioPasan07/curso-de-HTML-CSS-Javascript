@@ -1,4 +1,6 @@
-
+window.onload = function () {
+    posicionCarrusel()
+}
 console.log("Hola");
 
 let imagenes = ['img/imagen1-jpg.jpg',
@@ -30,29 +32,29 @@ let atras = document.getElementById('atras');
 let adelante = document.getElementById('adelante');
 let imagen = document.getElementById('img');
 let puntos = document.getElementById('puntos');
-//let texto = document.getElementById('texto');
-let primero = 0
+let texto = document.getElementById('texto');
+let posicion = 0
 posicionCarrusel()
 
 atras.addEventListener('click', function () {
     
-    primero -= 1;
-    if (primero === - 1){
-        primero = imagenes.length -1;
+    posicion -= 1;
+    if (posicion === -1){
+        posicion = imagenes.length -1;
     } 
-    imagen.innerHTML = `<img class="img" src="${imagenes[primero]}" alt="imagenes"></img>`
-    document.getElementById('texto').innerHTML = textos[primero];
+    imagen.innerHTML = `<img class="img" src="${imagenes[posicion]}" alt="imagenes"></img>`
+    document.getElementById('texto').innerHTML = textos[posicion];
     posicionCarrusel()
 })
 
 adelante.addEventListener('click', function () {
-    console.log(primero);
-    primero += 1;
-    if (primero === imagenes.length){
-        primero = 0;
+    console.log(posicion);
+    posicion += 1;
+    if (posicion === imagenes.length){
+        posicion = 0;
     } 
-    imagen.innerHTML = `<img class="img" src="${imagenes[primero]}" alt="imagenes">`
-    document.getElementById('texto').innerHTML = `<h3>${textos[primero]}</h3>`;
+    imagen.innerHTML = `<img class="img" src="${imagenes[posicion]}" alt="imagenes">`
+    document.getElementById('texto').innerHTML = `<h3>${textos[posicion]}</h3>`;
     posicionCarrusel()
 })
 
@@ -67,9 +69,9 @@ enviar.addEventListener('click', function () {
     if (encontrado === 0){
         imagenes.push(document.getElementById("url").value);
         textos.push(document.getElementById("textourl").value);
-        alert ("Url anadida...")
+        alert ("URL add...")
     }else{
-        alert ("Url no anadida porque ya estaba...")
+        alert ("La URL no se puede anidar porque ya esta...")
     }
    
 
@@ -79,7 +81,7 @@ enviar.addEventListener('click', function () {
 function posicionCarrusel() {
     puntos.innerHTML = ""
     for (let i = 0 ; i <= imagenes.length ; i++) {
-        if (i === primero){
+        if (i === posicion){
             puntos.innerHTML += '<p class="bold">.</p>'
         }
         else {
